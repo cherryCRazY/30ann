@@ -4,7 +4,7 @@ import React from "react"
 //Components
 import Header from "../components/Header"
 import Advanteges from "../components/Advanteges"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import SEO from "../components/seo"
 
 //Styles
@@ -18,7 +18,7 @@ const IndexPage = () => (
     />
     <Header></Header>
     <Advanteges></Advanteges>
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
   </div>
 )
 
