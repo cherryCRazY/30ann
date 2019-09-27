@@ -1,0 +1,43 @@
+.HeaderFormWrapper {
+  height: 100%;
+  display: grid;
+  align-items: flex-end;
+  .TextWrapper {
+    text-transform: uppercase;
+    height: 75%;
+    width: 80%;
+    color: #ffffff;
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      font-family: "GothamProBlack";
+      margin-bottom: 32px;
+    }
+    .subtitle {
+      font-size: 27px;
+      font-weight: normal;
+      text-align: left;
+      color: #faf5f4;
+      margin-bottom: 32px;
+    }
+    .blue {
+      height: 62px;
+      width: 80%;
+
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+
+      font-size: 24px;
+      font-weight: 900;
+      font-family: "GothamProBlack";
+
+      border-radius: 10px;
+      padding-left: 16px;
+      background-color: #31479a;
+      color: #faf5f4;
+
+      margin: 30px 0;
+    }
+  }
+}

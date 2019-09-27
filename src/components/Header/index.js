@@ -5,13 +5,9 @@ import React from "react"
 import "./style.scss"
 
 //Components
-// import Button from "../Button"
-// import CustomInput from "../CustomInput"
-// import Background from "./HeaderLayout/Background"
-// import Logo from "./HeaderLayout/Logo"
 import Image from "./Image"
-
 import HeaderLayout from "./HeaderLayout"
+import HeaderFormWrapper from "./HeaderFormWrapper"
 
 //Images
 import main from "../../images/main.png"
@@ -27,6 +23,7 @@ const Header = () => {
     <HeaderLayout>
       <div className="HeaderContainer">
         <Image src={main} alt="ТАСКОМБАНК 30 років акція"></Image>
+        <HeaderFormWrapper></HeaderFormWrapper>
       </div>
     </HeaderLayout>
   )

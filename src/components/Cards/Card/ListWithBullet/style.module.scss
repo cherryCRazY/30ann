@@ -1,0 +1,10 @@
+.withBullet {
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  & > li {
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}

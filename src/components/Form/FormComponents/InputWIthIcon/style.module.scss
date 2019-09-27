@@ -1,26 +1,11 @@
-.InputWithIconWrapper {
-  display: grid;
-  p {
-    width: 60%;
-    justify-self: center;
-    display: inline;
-    font-weight: bold;
-    text-align: center;
-    color: #721d28;
-  }
-}
-
 .InputWithIcon {
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-gap: 2px;
-  height: 75px;
+  width: 100%;
+  grid-template-columns: 12% 88%;
+  grid-gap: 3px;
+  height: 7vh;
   margin-bottom: 10px;
   justify-self: center;
-
-  :first-child {
-    margin-left: 10px;
-  }
 
   .img {
     width: 30px;
@@ -41,59 +26,67 @@
     background: #bbcce6;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .InputWithIcon {
-    grid-gap: 4px;
-  }
-}
-@media (max-width: 1200px) {
-  .InputWithIcon {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1050px) {
-  .InputWithIconWrapper {
-    margin-bottom: 50px;
-  }
-  .InputWithIcon {
-    width: unset;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  .InputWithIconWrapper {
-    p {
-      text-align: center;
-    }
-  }
-  .InputWithIcon {
-    grid-template-columns: 21% 70%;
-    margin-left: 10px;
-    width: 320px;
-    justify-content: center;
-    justify-self: center;
-  }
-}
-@media (max-width: 400px) {
-  .InputWithIcon {
-    grid-template-columns: 21% 63%;
-    margin-left: 10px;
-    justify-content: center;
-    .input {
-      font-size: 19px;
-      font-weight: 600;
+    &::placeholder {
+      color: rgba(128, 128, 128, 0.5);
       text-align: left;
+      padding-left: 10px;
+      font-size: 22px;
+      font-weight: 900;
+      font-family: "GothamProLight";
     }
   }
 }
-@media (max-width: 340px) {
-  .InputWithIcon {
-    width: 280px;
-    grid-template-columns: 24% 70%;
-  }
-}
+
+// @media (max-width: 1400px) {
+//   .InputWithIcon {
+//     grid-gap: 4px;
+//   }
+// }
+// @media (max-width: 1200px) {
+//   .InputWithIcon {
+//     justify-content: center;
+//   }
+// }
+
+// @media (max-width: 1050px) {
+//   .InputWithIconWrapper {
+//     // margin-bottom: 50px;
+//   }
+//   .InputWithIcon {
+//     width: unset;
+//     // margin-bottom: 10px;
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .InputWithIconWrapper {
+//     p {
+//       text-align: center;
+//     }
+//   }
+//   .InputWithIcon {
+//     grid-template-columns: 21% 70%;
+//     margin-left: 10px;
+//     width: 320px;
+//     justify-content: center;
+//     justify-self: center;
+//   }
+// }
+// @media (max-width: 400px) {
+//   .InputWithIcon {
+//     grid-template-columns: 21% 63%;
+//     margin-left: 10px;
+//     justify-content: center;
+//     .input {
+//       font-size: 19px;
+//       font-weight: 600;
+//       text-align: left;
+//     }
+//   }
+// }
+// @media (max-width: 340px) {
+//   .InputWithIcon {
+//     width: 280px;
+//     grid-template-columns: 24% 70%;
+//   }
+// }

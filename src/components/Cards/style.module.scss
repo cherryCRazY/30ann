@@ -1,0 +1,37 @@
+.CardsWrapper {
+  background-color: #faf5f4;
+  padding: 7% 7.5% 10% 7.5%;
+
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "GothamProMedium";
+  color: #001e61;
+
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .subtitle {
+    padding-top: 35px;
+    padding-bottom: 80px;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

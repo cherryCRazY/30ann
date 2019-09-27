@@ -21,7 +21,7 @@ const InputWithIcon = ({
           <img
             className={style.img}
             src={img}
-            alt="ТАСКОМБАНК РЕФІНАНС ЗВОРОТНІЙ ЗВЯЗОК"
+            alt="ТАСКОМБАНК ЗВОРОТНІЙ ЗВЯЗОК"
           ></img>
         </div>
 
@@ -30,11 +30,13 @@ const InputWithIcon = ({
             className={style.input}
             onChange={({ target: { value } }) => change(value)}
             mask="+38 (099) 999-99-99"
+            placeholder="ТЕЛЕФОН"
           />
         ) : (
           <input
             className={style.input}
             type={type}
+            placeholder={"ІМ'Я"}
             onChange={({ target: { value } }) => change(value)}
           ></input>
         )}

@@ -9,7 +9,7 @@ import jump from "jump.js"
 
 const moveTo = () => jump(".footer", { duration: 2000 })
 
-const Button = ({ jump, click, style }) => {
+const Button = ({ jump, click, style, text }) => {
   return (
     <button
       id="button"
@@ -17,7 +17,7 @@ const Button = ({ jump, click, style }) => {
       onClick={jump ? moveTo : click}
       className={styles.button}
     >
-      ПЕРЕКРЕДИТУВАТИСЬ!!
+      {text}
     </button>
   )
 }

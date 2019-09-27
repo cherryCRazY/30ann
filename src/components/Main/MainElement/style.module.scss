@@ -1,0 +1,33 @@
+.MainElement {
+  display: grid;
+  grid-gap: 5%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  .image {
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 400px;
+    :last-child {
+      width: 300px;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #001e61;
+    font-family: "GothamProMedium";
+  }
+  .list {
+    list-style-type: none;
+    font-family: "GothamProMedium";
+    font-weight: bold;
+    color: #313131;
+    li {
+      padding-top: 2px;
+    }
+  }
+}
