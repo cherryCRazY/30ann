@@ -7,7 +7,7 @@ import styles from "./style.module.scss"
 //styles
 import jump from "jump.js"
 
-const moveTo = () => jump(".footer", { duration: 2000 })
+const moveTo = () => jump(".HeaderContainer", { duration: 2000 })
 
 const Button = ({ jump, click, style, text }) => {
   return (

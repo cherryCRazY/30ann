@@ -1,5 +1,5 @@
 //Core
-import React from "react"
+import React, { useState } from "react"
 
 //Components
 import InputWIthIcon from "./FormComponents/InputWIthIcon"
@@ -11,6 +11,10 @@ import person from "../../images/person.png"
 import phone from "../../images/phone.png"
 
 const Form = () => {
+  const [orderCard, setOrderCard] = useState(false)
+
+  const toogleOrder = () => setOrderCard(!orderCard)
+
   return (
     <div>
       <InputWIthIcon
@@ -29,7 +33,7 @@ const Form = () => {
         type={"number"}
         mask
       ></InputWIthIcon>
-      <CheckBox></CheckBox>
+      <CheckBox click={toogleOrder}></CheckBox>
       <Button text={"Зареєструватися в акції"}></Button>
     </div>
   )

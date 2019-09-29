@@ -24,7 +24,7 @@ const big5Advantages = [
 const pudraAdvantages = [
   `До 100 000 грн кредитного ліміту`,
   `5% кешбеку на одяг та взуття`,
-  `3% кешбеку на косметику, парфумерію, б’юті сферу та аптеки`,
+  `3% кешбеку на косметику,парфумерію, \n б’юті сферу та аптеки`,
   `1% кешбеку на будь-які покупки`,
   `До 55 днів пільговий період `,
   `10% річних на залишок власних коштів`,
@@ -41,7 +41,7 @@ const Cards = () => {
       </h3>
       <div className={style.Cards}>
         <Card
-          title={"Велика п’ятірка"}
+          title={"Велика П’ятірка"}
           image={big5}
           advantages={big5Advantages}
         ></Card>
@@ -49,7 +49,7 @@ const Cards = () => {
           title={"#PudraCard"}
           image={pudra}
           advantages={pudraAdvantages}
-          cor={{ paddingTop: "20px" }}
+          cor={{ padding: "11px", marginTop: "36px" }}
         ></Card>
       </div>
     </section>

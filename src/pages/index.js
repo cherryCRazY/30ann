@@ -6,7 +6,7 @@ import Header from "../components/Header"
 import Main from "../components/Main"
 // import Advanteges from "../components/Advanteges"
 import Cards from "../components/Cards"
-// import Footer from "../components/Footer"
+import Footer from "../components/Footer"
 import SEO from "../components/seo"
 
 //Styles
@@ -21,7 +21,7 @@ const IndexPage = () => (
     <Header></Header>
     <Main></Main>
     <Cards></Cards>
-    {/* <Footer></Footer> */}
+    <Footer></Footer>
   </div>
 )
 

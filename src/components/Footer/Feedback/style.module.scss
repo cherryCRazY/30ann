@@ -1,0 +1,25 @@
+.Feedback {
+  position: absolute;
+  width: 100%;
+
+  top: 100%;
+  transform: translate(0, -150%);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  .FeedbackMainInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    grid-gap: 5%;
+  }
+  .TAS {
+    font-size: 22px;
+    color: #faf5f4;
+    font-size: 30px;
+    padding-bottom: 30px;
+    // text-align: center;
+  }
+}
