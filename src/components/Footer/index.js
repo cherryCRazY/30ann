@@ -8,18 +8,6 @@ import "./style.scss"
 import Button from "../Form/FormComponents/Button"
 import Feedback from "./Feedback"
 
-import swal from "sweetalert"
-
-const onSucces = value => {
-  swal(
-    "Заявку прийнято в роботу!",
-    `Ми зателефонуємо Вам найближчим часом`,
-    "success"
-  )
-}
-const onFail = value => {
-  swal("Помилка!", `Сервіс не відповідає спробуйте пізніше`, "error")
-}
 
 // export default Footer
 

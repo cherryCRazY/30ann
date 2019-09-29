@@ -2,3 +2,17 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
+@media (max-width: 1450px) {
+  .HeaderContainer {
+    grid-template-columns: 55% 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  .HeaderContainer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+  }
+}

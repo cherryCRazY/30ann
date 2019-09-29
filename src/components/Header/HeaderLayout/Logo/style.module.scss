@@ -4,3 +4,14 @@
   left: 75%;
   top: 10%;
 }
+
+@media (max-width: 1515px) {
+  .Logo {
+    width: 110px;
+  }
+}
+@media (max-width: 900px) {
+  .Logo {
+    display: none;
+  }
+}

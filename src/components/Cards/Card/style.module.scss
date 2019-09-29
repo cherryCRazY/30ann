@@ -47,3 +47,12 @@
     grid-template-rows: 15% 80%;
   }
 }
+
+@media (max-width: 500px) {
+  .Card {
+    .ImageContainer {
+      height: 240px;
+      width: unset;
+    }
+  }
+}

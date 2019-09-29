@@ -35,3 +35,28 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (max-width: 910px) {
+  .CardsWrapper {
+    padding-bottom: 30%;
+
+    .title {
+      font-size: 26px;
+    }
+    .subtitle {
+      font-size: 22px;
+    }
+    .Cards {
+      grid-template-columns: 1fr;
+      row-gap: 5%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .CardsWrapper {
+    .subtitle {
+      padding-bottom: 40px;
+    }
+  }
+}

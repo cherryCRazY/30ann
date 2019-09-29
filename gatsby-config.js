@@ -22,7 +22,7 @@ module.exports = {
         // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "refinance.tascombank.ua",
+        cookieDomain: "30ann.tascombank.ua",
       },
     },
     {

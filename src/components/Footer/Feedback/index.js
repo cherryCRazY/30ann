@@ -32,7 +32,7 @@ const Feedback = () => {
           annotation={"Ліцензія НБУ 84 від 25 жовтня 2011 року"}
         ></FooterLink>
       </div>
-      <div>
+      <div className={style.cor}>
         <FooterLink
           small
           annotation={

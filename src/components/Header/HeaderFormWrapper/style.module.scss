@@ -41,3 +41,150 @@
     }
   }
 }
+
+@media (max-width: 1680px) {
+  .HeaderFormWrapper {
+    .TextWrapper {
+      height: 80%;
+      .blue {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1515px) {
+  .HeaderFormWrapper {
+    .TextWrapper {
+      .title {
+        font-size: 50px;
+        font-weight: 900;
+        font-family: "GothamProBlack";
+        margin-bottom: 32px;
+      }
+      .subtitle {
+        font-size: 20px;
+        font-weight: normal;
+        text-align: left;
+        color: #faf5f4;
+        margin-bottom: 32px;
+        padding-bottom: 5px;
+      }
+      .blue {
+        width: 90%;
+        font-size: 21px;
+      }
+    }
+  }
+}
+@media (max-width: 1450px) {
+  .HeaderFormWrapper {
+    .TextWrapper {
+      width: 90%;
+      height: 80%;
+      .blue {
+        width: 95%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .HeaderFormWrapper {
+    .TextWrapper {
+      .title {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+      .blue {
+        font-size: 19px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .HeaderFormWrapper {
+    .TextWrapper {
+      .title {
+        font-size: 35px;
+      }
+      .subtitle {
+        font-size: 14px;
+      }
+      .blue {
+        font-size: 16px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .HeaderFormWrapper {
+    height: unset;
+    .TextWrapper {
+      margin-bottom: 40px;
+      height: unset;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .HeaderFormWrapper {
+    justify-content: center;
+    justify-items: center;
+    .TextWrapper {
+      margin-bottom: 50px;
+      .blue {
+        h3 {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .HeaderFormWrapper {
+    justify-content: center;
+    justify-items: center;
+    .TextWrapper {
+      .blue {
+        h3 {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 330px) {
+  .HeaderFormWrapper {
+    justify-content: center;
+
+    .TextWrapper {
+      width: 90%;
+      .title {
+        text-align: center;
+      }
+      .subtitle {
+        text-align: center;
+        letter-spacing: 1.5px;
+      }
+      .blue {
+        height: 62px;
+
+        h3 {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

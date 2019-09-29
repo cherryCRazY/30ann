@@ -42,7 +42,9 @@ const InputWithIcon = ({
         )}
       </div>
 
-      <p> {checked ? (valid ? " " : message) : ""}</p>
+      <p style={{ color: "#721d28" }}>
+        {checked ? (valid ? " " : message) : ""}
+      </p>
     </div>
   )
 }

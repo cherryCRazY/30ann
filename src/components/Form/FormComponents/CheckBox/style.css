@@ -70,3 +70,15 @@
   transition: all 0.2s linear;
   transition-delay: 0.15s;
 }
+
+@media (max-width: 1250px) {
+  .check {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkboxWrapper {
+    margin-left: 20px;
+  }
+}

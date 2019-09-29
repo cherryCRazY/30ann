@@ -18,7 +18,15 @@ const Main = props => {
       <img src={left} className={style.left}></img>
       <img src={right} className={style.right}></img>
       <main>{props.children}</main>
-      <button className={style.conditions}>Офіційні правила акції</button>
+      <a
+        href="/static/30ann.pdf"
+        target="_blank"
+        rel="noopener norefferer"
+        style={{ textDecoration: "none" }}
+        className={style.conditions}
+      >
+        Офіційні правила акції
+      </a>
     </div>
   )
 }

@@ -1,56 +1,54 @@
 //Core
-import React, { useState } from "react"
+import React from "react"
 
 //Components
-import InputWIthIcon from "./FormComponents/InputWIthIcon"
+import InputWithIcon from "./FormComponents/InputWithIcon"
 import Button from "./FormComponents/Button"
 import CheckBox from "./FormComponents/CheckBox"
+import { onFail, onSucces } from "../UI/PopUp"
+import Spinner from "../UI/Spinner"
 
 //Images
-import person from "../../images/person.png"
-import phone from "../../images/phone.png"
+import personIcon from "../../images/person.png"
+import phoneIcon from "../../images/phone.png"
+
+//CustomHooks
+import useForm from "../../helpers/customHooks"
 
 const Form = () => {
-  const [orderCard, setOrderCard] = useState(false)
+  const { state, toogleOrder, changeName, changePhone, onClick } = useForm()
+  const { name, phone, fetch, success, fail } = state
 
-  const toogleOrder = () => setOrderCard(!orderCard)
+  // console.log("state", state)
 
-  return (
-    <div>
-      <InputWIthIcon
-        img={person}
-        // change={this.handleChangeName}
-        message={"Перевірте правильність вводу ім'я"}
-        // checked={name.checked}
-        // valid={name.valid}
-      ></InputWIthIcon>
-      <InputWIthIcon
-        img={phone}
-        // change={this.handleChangePhone}
-        // checked={phone.checked}
-        // valid={phone.valid}
-        message={"Перевірте правильність вводу номера мобільного телефону"}
-        type={"number"}
-        mask
-      ></InputWIthIcon>
-      <CheckBox click={toogleOrder}></CheckBox>
-      <Button text={"Зареєструватися в акції"}></Button>
-    </div>
+  return fetch ? (
+    <Spinner />
+  ) : (
+    <>
+      <div>
+        <InputWithIcon
+          img={personIcon}
+          change={changeName}
+          message={"Перевірте правильність вводу ім'я"}
+          checked={name.checked}
+          valid={name.valid}
+        ></InputWithIcon>
+        <InputWithIcon
+          img={phoneIcon}
+          change={changePhone}
+          checked={phone.checked}
+          valid={phone.valid}
+          message={"Перевірте правильність вводу номера мобільного телефону"}
+          type={"number"}
+          mask
+        ></InputWithIcon>
+        <CheckBox click={toogleOrder}></CheckBox>
+        <Button text={"Зареєструватися в акції"} click={onClick}></Button>
+      </div>
+      {success ? onSucces() : null}
+      {fail ? onFail() : null}
+    </>
   )
 }
 
 export default Form
-
-// import React, { Component } from 'react';
-
-// class Form extends Component {
-//     render() {
-//         return (
-//             <div>
-
-//             </div>
-//         );
-//     }
-// }
-
-// export default Form;

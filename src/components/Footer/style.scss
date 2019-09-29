@@ -3,7 +3,7 @@
   box-sizing: content-box;
   position: relative;
 
-  min-height: 60vh;
+  min-height: 80vh;
   background: linear-gradient(to right, #31479a, #6ea8dc);
 
   .buttonWrapper {
@@ -12,5 +12,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    .buttonWrapper {
+      width: 85%;
+      top: 30%;
+      transform: translate(-50%);
+    }
   }
 }

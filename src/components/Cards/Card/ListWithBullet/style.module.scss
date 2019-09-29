@@ -8,3 +8,13 @@
     line-height: 1.4;
   }
 }
+
+@media (max-width: 500px) {
+  .withBullet {
+    padding-bottom: 15px;
+
+    & > li {
+      margin-bottom: 5px;
+    }
+  }
+}

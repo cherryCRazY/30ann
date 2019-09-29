@@ -64,3 +64,55 @@
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .MainWrapper {
+    .title {
+      font-size: 26px;
+    }
+    .left {
+      width: 20%;
+    }
+    .right {
+      width: 20%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .MainWrapper {
+    .title {
+      font-size: 26px;
+    }
+    .left {
+      width: 20%;
+      object-fit: cover;
+    }
+    .right {
+      width: 20%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .MainWrapper {
+    .conditions {
+      width: 60%;
+
+      font-size: 16px;
+      margin-top: 50%;
+      margin-bottom: 30%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .MainWrapper {
+    margin-bottom: 20%;
+    .title {
+      font-size: 22px;
+    }
+    .conditions {
+      width: 80%;
+    }
+  }
+}

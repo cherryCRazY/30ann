@@ -34,3 +34,29 @@
     margin-right: 15px;
   }
 }
+
+@media (max-width: 900px) {
+  .FooterLink {
+    .link {
+      font-size: 20px;
+    }
+    .annotation {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .FooterLink {
+    .link {
+      font-size: 18px;
+    }
+    .annotation {
+      font-size: 14px;
+    }
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
