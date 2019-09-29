@@ -52,8 +52,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Рефінансування кредитів без переплат | ТАСКОМБАНК"`,
-        short_name: `Рефінансування | ТАСКОМБАНК"`,
+        name: `Cупер розіграш з нагоди 30 річчя | ТАСКОМБАНК"`,
+        short_name: `Конкурс | ТАСКОМБАНК"`,
         start_url: `/`,
         background_color: `#31479a`,
         theme_color: `#31479a`,

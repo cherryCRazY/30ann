@@ -24,8 +24,28 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:url`,
+          content: "https://30ann.tascombank.ua/",
+        },
+        {
+          property: `og:image`,
+          content: "https://tascombank.ua/files/logo.png",
+        },
+        {
+          property: `og:image:secure_url`,
+          content: "https://tascombank.ua/files/logo.png",
+        },
+        {
+          property: `og:image:type`,
+          content: "image/png",
         },
         {
           property: `og:description`,
